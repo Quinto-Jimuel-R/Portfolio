@@ -25,3 +25,45 @@ body::-webkit-scrollbar {
   --color-gradient: #001242;
   --color-background: #020617;
 }
+
+/*
+    Background: near-black navy (#0D1117 → #0B0F19)
+
+    Cards: slightly lighter dark (#111827 / #1E293B)
+
+    Accent color: soft indigo–violet gradient (#6C63FF → #8B5CF6)
+
+    Text: white + muted gray (#E5E7EB / #9CA3AF)
+
+    Highlights: subtle neon-like blues and purples.
+*/
+
+@keyframes fogMove1 {
+  0% { transform: translate(-20%, -10%) scale(1); }
+  50% { transform: translate(10%, 10%) scale(1.1); }
+  100% { transform: translate(-20%, -10%) scale(1); }
+}
+
+@keyframes fogMove2 {
+  0% { transform: translate(20%, -20%) scale(1.2); }
+  50% { transform: translate(-10%, 10%) scale(1.1); }
+  100% { transform: translate(20%, -20%) scale(1.2); }
+}
+
+@keyframes fogMove3 {
+  0% { transform: translate(0%, 20%) scale(1); }
+  50% { transform: translate(10%, -10%) scale(1.15); }
+  100% { transform: translate(0%, 20%) scale(1); }
+}
+
+.animate-fogMove1 {
+  animation: fogMove1 25s ease-in-out infinite;
+}
+
+.animate-fogMove2 {
+  animation: fogMove2 35s ease-in-out infinite;
+}
+
+.animate-fogMove3 {
+  animation: fogMove3 30s ease-in-out infinite;
+}
